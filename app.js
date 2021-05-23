@@ -17,9 +17,9 @@ app.use("/", indexRouter);
 // if anyone goes here, take them to teamRouter
 app.use("/api/todo", toDoRouter);
 
-app.listen(3000, function () {
-  console.log(`Server is running on PORT: ${3000}`);
-});
+// app.listen(3000, function () {
+//   console.log(`Server is running on PORT: ${3000}`);
+// });
 
 
-// module.exports = router;
+module.exports = router;
