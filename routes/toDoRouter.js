@@ -6,12 +6,12 @@ let todos = [
   {
   id: "haf24jd",
   todo: "do laundry",
-  done: false
+  done: "false"
   },
   {
   id: "jp2nkl2",
   todo: "wash dishes",
-  done: true
+  done: "true"
   }
   ]
 router.get("/get-all-todos", function (req, res) {
@@ -45,7 +45,7 @@ router.post("/create-new-todo", function (req, res) {
   let newToDo = {
     id: uuidv4(),
     todo: req.body.todo,
-    done: false
+    done: "false"
   };
   let isTrue = true;
   todos.forEach((element)=>{ 
